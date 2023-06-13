@@ -9,7 +9,7 @@ export const DictionaryProvider = ({ children }) => {
 
   useEffect(() => {
     try {
-      fetch("src/assets/dictionary.txt")
+      fetch("src/dictionary.txt")
         .then((response) => response.text())
         .then((data) => {
           const worddata = data.split("@");
